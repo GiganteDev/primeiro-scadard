@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\bin\Debug\SCADARD.exe.config
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\bin\Debug\SCADARD.exe
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\bin\Debug\SCADARD.pdb
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.csprojAssemblyReference.cache
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.Form1.resources
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.Properties.Resources.resources
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.csproj.GenerateResource.cache
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.exe
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.pdb
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.dashboard1.resources
