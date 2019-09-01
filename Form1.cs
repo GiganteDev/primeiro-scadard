@@ -101,6 +101,10 @@ namespace SCADARD
             button2.BackColor = button1.FlatAppearance.MouseOverBackColor;
             button3.BackColor = panel2.BackColor;
             button4.BackColor = panel2.BackColor;
+            panel4.Height = button2.Height;
+            panel4.Top = button2.Top;
+            dash1.BringToFront();
+            button5.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -109,6 +113,10 @@ namespace SCADARD
             button2.BackColor = panel2.BackColor;
             button3.BackColor = button1.FlatAppearance.MouseOverBackColor;
             button4.BackColor = panel2.BackColor;
+            panel4.Height = button3.Height;
+            panel4.Top = button3.Top;
+            settings1.BringToFront();
+            button5.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -117,6 +125,10 @@ namespace SCADARD
             button2.BackColor = panel2.BackColor;
             button3.BackColor = panel2.BackColor;
             button4.BackColor = button1.FlatAppearance.MouseOverBackColor;
+            panel4.Height = button4.Height;
+            panel4.Top = button4.Top;
+
+            button5.BringToFront();
         }
 
         private void button2_Paint(object sender, PaintEventArgs e)
@@ -197,16 +209,66 @@ namespace SCADARD
         private void Form1_Load(object sender, EventArgs e)
         {
             button1.BackColor = button1.FlatAppearance.MouseOverBackColor;
+            button5.BackColor = dashboard11.BackColor;
+            button1.BringToFront();
+            button2.BringToFront();
+            button3.BringToFront();
+            button4.BringToFront();
+            dashboard11.BringToFront();
+            button5.BringToFront();
         }
 
         private void dashboard11_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
             GraphicsPath grafe = new GraphicsPath();
-            grafe.AddRectangle(new Rectangle(1, 1, pictureBox1.Width, pictureBox1.Height));
+            grafe.AddRectangle(new Rectangle(1, 1, panel4.Width, panel4.Height));
+
+            // Canto superior esquerdo
+            grafe.AddRectangle(new Rectangle(1, 1, 5, 5));
+            grafe.AddPie(1, 1, 10, 10, 180, 90);
+
+            // Canto inferior esquedro
+            grafe.AddRectangle(new Rectangle(1, panel4.Height - 5, 5, 5));
+            grafe.AddPie(1, panel4.Height - 10, 10, 10, 90, 90);
+
+            // Canto superior direito
+            grafe.AddRectangle(new Rectangle(panel4.Width - 6, 1, 6, 7));
+            grafe.AddPie(panel4.Width - 12, 1, 12, 14, 270, 90);
+
+            // Canto inferior direito
+            grafe.AddRectangle(new Rectangle(panel4.Width - 7, panel4.Height - 7, 7, 7));
+            grafe.AddPie(panel4.Width - 14, panel4.Height - 14, 14, 14, 0, 90);
+
+            grafe.SetMarkers();
+            panel4.Region = new Region(grafe);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel4.Height = button1.Height;
+            panel4.Top = button1.Top;
+            dashboard11.BringToFront();
+            button5.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dashboard11_Load(object sender, EventArgs e)
+        {
+            GraphicsPath grafe = new GraphicsPath();
+            grafe.AddRectangle(new Rectangle(1, 1, panel3.Width, panel3.Height));
 
             // Canto inferior direito
             grafe.AddRectangle(new Rectangle(panel3.Width - 24, panel3.Height - 26, 26, 26));
-            grafe.AddPie(panel3.Width - 48, pictureBox1.Height - 52, 48, 52, 0, 90);
+            grafe.AddPie(panel3.Width - 48, panel3.Height - 52, 48, 52, 0, 90);
 
             grafe.SetMarkers();
             panel3.Region = new Region(grafe);
