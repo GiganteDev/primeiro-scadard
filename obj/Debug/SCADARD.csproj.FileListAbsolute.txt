@@ -9,3 +9,6 @@ C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.csproj.CoreCompi
 C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.exe
 C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.pdb
 C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.dashboard1.resources
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.trip1.resources
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.settings.resources
+C:\Users\User\source\repos\SCADARD_UI\SCADARD\obj\Debug\SCADARD.dash.resources
